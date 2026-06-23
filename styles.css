@@ -74,6 +74,7 @@ body {
  font-family: 'Press Start 2P';
  background-color: var(--background) !important;
  color: var(--foreground) !important;
+ cursor: default !important;
  }
 
 i {
@@ -83,4 +84,14 @@ i {
 .navbar {
  background-color: var(--card) !important;
  border-bottom-color: var(--border) !important;
+ }
+
+ .card {
+   transition: transform 0.05s ease-in-out;
+ }
+
+ .card:hover {
+   transform: translateY(-4px) scale(1);
+   box-shadow: 5px 5px 0px var(--primary);
+   background-color: var(--muted);
  }
